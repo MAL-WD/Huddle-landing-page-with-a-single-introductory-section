@@ -20,7 +20,7 @@ body{
     position: relative;
     gap: 50px;
     height:100vh;
-    background-image: url(/challenges/challenge-11/images/bg-desktop.svg);
+    background-image: url(../images/bg-desktop.svg);
 }
 .images{
     /* margin-right: 50px; */
@@ -92,6 +92,7 @@ body{
     }
     img{
         margin-top: 40px;
+        max-width:100%;
     }
     
     .content{
