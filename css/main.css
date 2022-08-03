@@ -1,0 +1,113 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    background-color: 
+    hsl(257, 40%, 49%);
+    
+}
+
+.container{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 80px;
+    color: white;
+    position: relative;
+    gap: 50px;
+    height:100vh;
+    background-image: url(/challenges/challenge-11/images/bg-desktop.svg);
+}
+.images{
+    /* margin-right: 50px; */
+}
+.logo{
+    width: 150px;
+    margin-bottom: 50px;
+    /* margin-top: -50px; */
+    max-width: 100%;
+    top: 50px;
+    position: absolute;
+}
+.content{
+    flex-basis: 50%;
+}
+.content h1{
+    font-family: poppins;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.content p{
+    margin-bottom: 25px;
+    font-family: 'Poppins';
+}
+.button{
+    padding: 15px 50px;
+    font-family: "Open SANS";
+    font-size: 20px;
+    background-color: white;
+    color: #674baf;
+    width: fit-content;
+    border-radius: 50px;
+}
+.icons{
+    display: flex;
+    justify-content: end;
+    /* margin-top: 100px; */
+    transform: translateY(250px);
+    
+}
+.icons i{
+    margin-right: 20px;
+    border: 1px solid white;
+    border-radius:50% ;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    /* display: grid; */
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+@media (max-width:1000px) {
+    .container{
+        flex-direction: column;
+        padding: 40px;
+        /* background-image: url(images/mobile); */
+    }
+    .logo{
+        margin: 0;
+    }
+    .images,.content{
+        /* flex-basis: 45%; */
+        max-width: 100%;
+        margin-top: 40px;
+    }
+    img{
+        margin-top: 40px;
+    }
+    
+    .content{
+        text-align: center;
+    }
+    .icons{
+        justify-content: center;
+        margin: 40px;
+        transform: translate(0);
+        margin-right: 30px;
+    }
+    .button{
+        margin: 30px auto;
+        padding: 15px 80px;
+    }
+    .content h1{
+        font-size: 25px;
+    }
+}
